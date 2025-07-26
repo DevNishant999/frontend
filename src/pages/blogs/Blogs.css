@@ -1,0 +1,55 @@
+.bbanner {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 18.21%,
+      rgba(0, 0, 0, 0.718652) 85.42%,
+      rgba(0, 0, 0, 0.9) 114.93%
+    ),
+    url(../../assets/blogb.png);
+  height: 600px;
+  margin-top: -9rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#guide .swiper {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+#guide .swiper-button-next,
+#guide .swiper-button-prev {
+  top: 10%;
+}
+
+#guide .swiper-button-prev {
+  top: 10%;
+  left: 91%;
+}
+
+#guide .swiper-button-next {
+  top: 10% !important;
+}
+
+#guide .swiper-button-next,
+#guide .swiper-button-prev {
+  color: #586548;
+  background-color: #fff;
+  border-radius: 500px;
+  border: 1px solid #586548;
+  padding: 20px 21px;
+  font-size: 10px;
+}
+
+#guide .swiper-button-prev:after,
+#guide .swiper-button-next:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 720px) {
+  #blogs button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+.Mbanner {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 18.21%,
+      rgba(0, 0, 0, 0.718652) 85.42%,
+      rgba(0, 0, 0, 0.9) 114.93%
+    ),
+    url(../../assets/mt.png);
+  height: 800px;
+  margin-top: -9rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#MDtest .swiper-button-prev,
+#MDtest .swiper-button-next {
+  top: 415px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  padding: 10px;
+}
+#MDtest .swiper-button-next {
+  left: 51.5%;
+}
+
+#MDtest .swiper-button-prev {
+  left: 44.5%;
+}
+
+#MDtest .swiper-button-prev::after,
+#MDtest .swiper-button-next::after {
+  font-size: 16px;
+}
+
+#MTfaq p,
+#MTfaq .p-head {
+  text-align: start !important;
+}
+
+#comp table tr th,
+#comp table tr td{
+  padding: 2rem;
+  background-color: #eff5f1;
+}
+
+#comp table thead tr th:nth-child(2){
+  color: #586548!important;
+}
+
+#comp table thead tr th:nth-child(2),
+#comp table tbody tr td:nth-child(2){
+  background-color: #fff!important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width:720px) {
+  #comp table{
+    min-width: 900px;
+  }
+}

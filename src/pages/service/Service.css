@@ -1,0 +1,226 @@
+#location .box {
+  height: 190px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #838e76;
+}
+
+#insights .swiper-button-next,
+#insights .swiper-button-prev {
+  color: #fff;
+  border-radius: 500px;
+  border: 1px solid #586548;
+  background-color: #586548;
+  padding: 20px 21px;
+  font-size: 10px;
+}
+
+#insights .swiper-button-prev:after,
+#insights .swiper-button-next:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#insights .swiper {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+#insights .swiper-button-next,
+#insights .swiper-button-prev {
+  top: 10%;
+}
+
+#insights .swiper-button-prev {
+  top: 10%;
+  left: 92%;
+}
+
+#insights .swiper-button-next {
+  top: 10% !important;
+}
+
+#faq .accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 24px;
+  margin-left: auto;
+}
+
+#faq .accordion-button.collapsed::after {
+  content: "+";
+}
+
+#faq .accordion-button:not(.collapsed)::after {
+  content: "-";
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background-color: #ffffff00;
+}
+
+#faq .accordion-item {
+  border: none;
+  border-bottom: 1px solid #919191;
+}
+
+#faq .accordion-button {
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 500;
+  color: #000;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+#faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+#faq .faq-number {
+  margin-right: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+.treat-box {
+  border-radius: 30px;
+  background-color: #f4faf6;
+  /* padding: 40px; */
+  color: #000;
+}
+
+.treat-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.treat-box li,
+.treat-box h4 {
+  padding: 40px;
+  border-bottom: 1px solid #dbdbdb;
+  height: 100px;
+}
+
+.treat-box li:last-child {
+  border-bottom: none;
+}
+
+.treat-box.tb-2 {
+  box-shadow: -47px 19px 200px 0px #0000001f !important;
+  background-color: #fff !important;
+  padding: 30px 0;
+}
+
+.tab-btn {
+  background-color: #e1e8e3 !important;
+}
+
+.tab-btn:hover {
+  color: #000;
+}
+
+.tab-btn.active {
+  background-color: #586548 !important;
+  box-shadow: 0px 13px 16px 0px #6272515c !important;
+}
+
+.fs-20px {
+  font-size: 12px;
+}
+
+.hw-20 {
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.hw-200 {
+  height: 200px;
+  width: 250px;
+}
+
+.peacock {
+  color: #c5ed82;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #586548;
+  margin: 0px 5px;
+}
+
+#Form .input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  border-radius: 0;
+}
+
+#Form .input-underline::placeholder {
+  color: #ddd;
+}
+
+#Form .input-underline:focus {
+  box-shadow: none;
+  border-color: #fff;
+  color: white;
+}
+
+#Form {
+  top: -90px;
+  height: 0;
+}
+
+.bg-qu {
+  background: url(../../assets/qubg.png);
+  background-color: #474f3e;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hollow-number {
+  font-size: 50px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #586548; /* Change to your desired color */
+}
+
+#Cost {
+  border-radius: 50px 50px 0 0;
+}
+
+#Cost table tr td,
+#Cost table tr th {
+  padding: 20px 0px 20px 20px;
+  width: 150px;
+  border-bottom: 1px solid #ddd;
+}
+#Cost table {
+    border-color: #ddd!important;
+}
+
+.faqhide .p-head,
+.faqhide>#faq>.container>.row>p{
+  display: none!important;
+}
+.faqhide .sec-pad{
+  padding: 0;
+}
+
+@media (max-width:768px){
+  .hw-200{
+    height: 190px;
+    width: 190px;
+  }
+}

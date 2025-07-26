@@ -1,0 +1,14 @@
+.clibanner {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 18.21%,
+      rgba(0, 0, 0, 0.718652) 85.42%,
+      rgba(0, 0, 0, 0.9) 114.93%
+    ),
+    url(../../assets/clinicban.png);
+  height: 600px;
+  margin-top: -9rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,37 @@
+#blogtable tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  padding: 1rem;
+  border: 1px solid #D9D9D9;
+}
+
+#blogtable tbody td{
+    width: 33%;
+}
+
+#blogtable {
+  background-color: #eff5f1;
+  border-radius: 30px;
+  padding: 2rem;
+  display: block;
+  border: 0;
+}
+
+#blogdetailsform input{
+  color: #fff!important;
+}
+
+.bg-parda{
+  background: url(../../assets/bg-c.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#blogdetailsform input::placeholder,
+#blogdetailsform textarea::placeholder {
+  color: white !important;
+  opacity: 1;
+}

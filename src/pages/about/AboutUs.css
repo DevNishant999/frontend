@@ -1,0 +1,191 @@
+#tourism {
+  background: linear-gradient(90deg, #000000 -9.68%, rgba(0, 0, 0, 0) 72.67%),
+    url(../../assets/tour.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.check-icon {
+  color: green;
+  font-size: 1.2rem;
+}
+.cross-icon {
+  color: red;
+  font-size: 1.2rem;
+}
+.highlight-bg {
+  background-color: #f0fff5 !important;
+}
+.testimonial-box {
+  min-height: 400px;
+  position: relative;
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.trusted-highlight {
+  background-color: #dfe8d9;
+  color: #365c2c;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+}
+
+.emoji-inline {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.trusted-section h2 {
+  line-height: 1.4;
+}
+
+.image-wrapper img {
+  max-height: 500px;
+  object-fit: cover;
+}
+#difference th,
+#difference td {
+  padding: 2rem 4rem;
+}
+#difference table thead {
+  border-radius: 1rem;
+}
+
+#Celeb .swiper-button-prev,
+#Celeb .swiper-button-next {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  color: #586548;
+}
+
+#Celeb .swiper-button-prev:after,
+#Celeb .swiper-button-next:after {
+  font-size: 25px;
+}
+
+#Celeb .swiper-button-prev:after {
+  content: "←";
+}
+#Celeb .swiper-button-next:after {
+  content: "→";
+}
+#doctor .in-card {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%);
+}
+
+#doctor .swiper {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+#doctor .swiper-button-next,
+#doctor .swiper-button-prev {
+  top: 10%;
+}
+
+#doctor .swiper-button-prev {
+  top: 4%;
+  left: 90%;
+}
+
+#doctor .swiper-button-next {
+  top: 4% !important;
+}
+
+#doctor .swiper-button-next,
+#doctor .swiper-button-prev {
+  color: #586548;
+  border-radius: 500px;
+  border: 1px solid #586548;
+  padding: 20px 21px;
+  font-size: 10px;
+}
+
+#doctor .swiper-button-prev:after,
+#doctor .swiper-button-next:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.know-bg {
+  background: url(../../assets/know-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#mission {
+  background: url(../../assets/bgline.png), #586548;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+#timeline .swiper {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+#timeline .swiper-button-next,
+#timeline .swiper-button-prev {
+  top: 5%;
+}
+
+#timeline .swiper-button-prev {
+  top: 6%;
+  left: 90%;
+}
+
+#timeline .swiper-button-next {
+  top: 6% !important;
+}
+
+#timeline .swiper-button-next,
+#timeline .swiper-button-prev {
+  background-color: #fff;
+  color: #586548;
+  border-radius: 500px;
+  border: 1px solid #fff;
+  padding: 20px 21px;
+  font-size: 10px;
+}
+
+#timeline .swiper-button-prev:after,
+#timeline .swiper-button-next:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#timeline .swiper-slide {
+  margin-bottom: 8rem;
+}
+
+#timeline .swiper-slide span {
+  top: -1rem;
+  left: -1rem;
+  background: #525e46;
+  border-radius: 10rem;
+}
+#timeline .swiper-slide::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../assets/dotline.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: start;
+  width: 100%;
+  height: 150%; /* Or set a fixed height */
+  z-index: -1;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  #timeline .swiper-slide {
+    margin-bottom: 1rem;
+  }
+  .ml-sm-0 {
+    margin-left: 0!important;
+  }
+}

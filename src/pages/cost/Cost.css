@@ -1,0 +1,125 @@
+#solution .swiper-button-next,
+#solution .swiper-button-prev {
+  color: #586548;
+  background-color: #fff;
+  border-radius: 500px;
+  border: 1px solid #fff;
+  padding: 20px 21px;
+  font-size: 10px;
+}
+
+#solution .swiper-button-prev:after,
+#solution .swiper-button-next:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#solution .swiper {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+#solution .swiper-button-next,
+#solution .swiper-button-prev {
+  top: 10%;
+}
+
+#solution .swiper-button-prev {
+  top: 10%;
+  left: 90%;
+}
+
+#solution .swiper-button-next {
+  top: 10% !important;
+}
+
+.qht-section {
+  color: white;
+  z-index: 1;
+}
+
+.qht-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: -1;
+}
+
+.estimate-form input::placeholder {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.baldness-option {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.baldness-option.selected.select-circle {
+  /* content: "*"; */
+  /* border-color: #6a774f; */
+  /* background-color: #f7f7f7; */
+  /* background-color: #586548; */
+}
+
+.form-check-input:checked {
+  background-color: #6a774f;
+  border-color: #6a774f;
+}
+
+.select-circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 3px solid #586548;
+  margin-bottom: 10px;
+}
+
+#cost li {
+  padding: 10px 0;
+}
+
+.marquee-container {
+  background-color: #5f6e4e; /* Match the olive-green tone */
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 25px 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.accordion-button:not(.collapsed){
+  background-color: #ffffff00;
+  box-shadow: none;
+  color: #586548;
+}
+
+#costpg table{
+  min-width: 800px;
+}
