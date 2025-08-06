@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Booknow from "./components/Booknow.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Loader from "./components/Loader.jsx";
 
 // Lazy loaded pages
 const Home = lazy(() => import("./pages/home/Home.jsx"));
@@ -28,23 +29,12 @@ const Country = lazy(() => import("./pages/country/Country.jsx"));
 const City = lazy(() => import("./pages/city/City.jsx"));
 
 const App = () => {
-  useEffect(() => {
-    const images = document.querySelectorAll("img");
-    images.forEach((img) => {
-      if (!img.hasAttribute("loading")) {
-        img.setAttribute("loading", "lazy");
-      }
-      if (!img.hasAttribute("decoding")) {
-        img.setAttribute("decoding", "async");
-      }
-    });
-  }, []);
 
   return (
     <Router>
       <Header />
       <Booknow />
-      <Suspense fallback={<div className="loading">Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/service/:slug" element={<Service />} />

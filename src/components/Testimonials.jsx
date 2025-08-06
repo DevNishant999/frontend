@@ -104,17 +104,19 @@ const Testimonials = () => {
       <div className="sec-pad" id="test">
         <div className="container py-md-5">
           <div className="d-flex justify-content-between align-items-center border-bottom flex-wrap">
-            {/* Heading */}
-            <div className="mb-4">
+            <div className="mb-4" data-aos="fade-up">
               <h2 className="p-head">Testimonials</h2>
             </div>
 
-            {/* Grade Filter */}
-            <div className="mb-4 bg-white rounded">
+            <div
+              className="mb-4 bg-white rounded p-md-2 p-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               {/* Mobile View: Show select */}
               {isMobile ? (
                 <select
-                  className="form-select"
+                  className="form-select primary-bg text-white"
                   value={selectedGrade}
                   onChange={(e) => handleGradeClick(e.target.value)}
                 >
@@ -146,7 +148,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <h4 className="my-4">
+          <h4 className="my-4" data-aos="fade-up" data-aos-delay="200">
             What our community says about their journey{" "}
             <br className="d-none d-md-block" /> and experiences with us so far.
           </h4>
@@ -167,9 +169,13 @@ const Testimonials = () => {
             }}
           >
             {filteredTestimonials.length > 0 ? (
-              filteredTestimonials.map((testimonial) => (
+              filteredTestimonials.map((testimonial, index) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className="p-4 bg-white border rounded-4 d-flex flex-column justify-content-between h-100">
+                  <div
+                    className="p-4 bg-white border rounded-4 d-flex flex-column justify-content-between h-100"
+                    data-aos="zoom-in"
+                    data-aos-delay={index * 100} // ✅ Now this will work
+                  >
                     <div>
                       <div className="d-flex justify-content-between mb-3 align-items-center">
                         <div className="mb-2 fs-4 primary-c">
@@ -184,7 +190,9 @@ const Testimonials = () => {
                         </div>
                       </div>
                       <h5>Exceptional Service & Results!</h5>
-                      <p className="text-muted h-100px overflow-y-scroll">{testimonial.text}</p>
+                      <p className="text-muted h-100px overflow-y-scroll">
+                        {testimonial.text}
+                      </p>
                     </div>
                     <div className="d-flex align-items-center border-top pt-4 mt-4">
                       <img
@@ -212,15 +220,14 @@ const Testimonials = () => {
           </Swiper>
 
           {/* View All Button */}
-          <div className="d-flex justify-content-center gap-md-4 align-items-center mt-5">
+          <div
+            className="d-flex justify-content-center gap-md-4 align-items-center mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div className="line d-none d-md-block"></div>
             <div>
-              <button
-                className="btn text-white rounded-pill px-4 py-2"
-                style={{ backgroundColor: "#627251" }}
-              >
-                View All Testimonials
-              </button>
+              <button className="primary-btn px-5">View All Testimonials</button>
             </div>
             <div className="line d-none d-md-block"></div>
           </div>

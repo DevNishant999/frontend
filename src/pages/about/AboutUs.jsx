@@ -26,6 +26,7 @@ import mission3 from "../../assets/m3.png";
 import gal from "../../assets/gal.png";
 import bhadwe from "../../assets/bhadwe.png";
 import abouth1 from "../../assets/abouth1.png";
+import Loader from "../../components/Loader";
 
 const AboutUs = () => {
   const [selectedCity, setSelectedCity] = useState("Delhi");
@@ -47,7 +48,7 @@ const AboutUs = () => {
   }, []);
 
   // if (loading) return <div>Loading...</div>;
-  if (!data) return <div>Error loading data</div>;
+  if (!data) return <Loader />;
 
   return (
     <>
@@ -63,7 +64,11 @@ const AboutUs = () => {
         <div className="sec-bg pt-md-5 pt-0 sec-pad">
           <div className="container">
             <div className="row justify-content-center align-items-center">
-              <img src={data.banner} className="w-md-50 w-100 mb-4" alt={data.banner} />
+              <img
+                src={data.banner}
+                className="w-md-50 w-100 mb-4"
+                alt={data.banner}
+              />
               <p className="text-center sec-c">{data.expertise.subtitle}</p>
 
               <div>

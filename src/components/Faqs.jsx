@@ -26,15 +26,23 @@ const Faqs = () => {
     <div id="faq" className="sec-pad">
       <div className="container">
         <div className="row">
-          <h2 className="text-center p-head">Frequently Asked Questions</h2>
-          <p className="text-center">
+          <h2 className="text-center p-head" data-aos="fade-up">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-center" data-aos="fade-up" data-aos-delay="100">
             If you don’t find a relevant answer please send us your queries on{" "}
-            <br /> support@qhtclinic.com or Call +91-9897020696
+            <br />
+            support@qhtclinic.com or Call +91-9897020696
           </p>
 
           <div className="accordion" id="faqAccordion">
             {faqs.map((faq, idx) => (
-              <div key={faq._id} className="accordion-item">
+              <div
+                key={faq._id}
+                className="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay={idx * 100}
+              >
                 <h2 className="accordion-header" id={`heading${idx}`}>
                   <button
                     className="accordion-button collapsed"

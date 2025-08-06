@@ -50,11 +50,13 @@ span {
   border-radius: 500px;
   padding: 10px;
   border: none;
+  transition: 0.2s ease-in-out;
 }
 
 .primary-btn:hover {
   border: 1px solid #586548;
-  color: #586548;
+  color: #fff;
+  background-color: #3d4536;
 }
 
 .border-p {
@@ -284,6 +286,10 @@ span {
   background-color: #c5ed82;
 }
 
+.border-n {
+  border: none !important;
+}
+
 @media (min-width: 768px) {
   .column-md-3 {
     column-count: 3;
@@ -313,9 +319,17 @@ span {
     left: 0% !important ;
     bottom: 0% !important;
     border-radius: 0px !important;
-    padding: 10px 0 !important;
+    padding: 2px 0 !important;
     width: 100% !important;
     height: fit-content !important;
+    gap: 2px;
+  }
+  #booknow > div {
+    width: 50%;
+  }
+  #booknow .primary-btn {
+    border-radius: 0 !important;
+    width: 100% !important;
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -336,4 +350,74 @@ span {
   .rounded-right {
     border-radius: 1.5rem 1.5rem 0 0;
   }
+}
+
+.logo-loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #eff5f1; /* dark for premium look */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.logo-glow-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: darken;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Shine / streak effect */
+.shine {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  z-index: 2;
+  animation: shineMove 2s infinite;
+  mix-blend-mode: screen;
+  border-radius: 12px;
+}
+
+@keyframes shineMove {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#footer .accordion-button::after{
+  background-image: none;
+  content: "+";
+}
+
+#footer a{
+  color: #A2AC99!important;
 }

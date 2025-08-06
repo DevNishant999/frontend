@@ -27,13 +27,13 @@ const Booknow = () => {
                 }}
             >
                 <div>
-                    <button className='primary-btn'>Book an Appointment</button>
+                    <button className='primary-btn w-sm-100'>Book an Appointment</button>
                 </div>
-                <div>
+                <div className='d-none d-md-block'>
                     <img src={or} alt="" style={{ width: "40px", height: "40px", objectFit: "contain" }} />
                 </div>
                 <div>
-                    <button className='primary-btn'>Live Chat &nbsp;&nbsp;&nbsp;&nbsp;💬</button>
+                    <button className='primary-btn w-sm-100'>Live Chat &nbsp;&nbsp;&nbsp;&nbsp;💬</button>
                 </div>
             </div>
         </div>
