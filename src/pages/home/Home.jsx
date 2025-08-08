@@ -159,50 +159,56 @@ const Home = () => {
   return (
     <>
       <div
+        className="sec-gradient"
         style={{
-          background:
-            "linear-gradient(180deg, rgba(240, 246, 242, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%)",
           overflowX: "hidden",
         }}
       >
         {/* Banner */}
-        <div className="container pt-4" id="banner">
-          <div
-            className="row justify-content-center align-items-center gap-4 gap-md-0 h-fit-content"
-            style={{ height: "450px" }}
-          >
-            <h1
-              data-aos="fade-in"
-              className="text-center w-md-75 w-100 fw-500 fs-sm-1 mt-4"
-              style={{ fontSize: "60px" }}
-            >
-              {(() => {
-                const words = data?.banner.heading.split(" ");
-                const lastFive = words.slice(-5).join(" ");
-                const rest = words.slice(0, -5).join(" ");
-                return (
-                  <>
-                    {rest} <span className="primary-c">{lastFive}</span>
-                  </>
-                );
-              })()}
-            </h1>
-
-            <h5
-              data-aos="fade-in"
-              className="text-center w-md-75 fw-normal w-100 fs-5 sec-c mb-3"
-            >
-              {data?.banner.subheading}
-            </h5>
+        <div
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(239, 245, 241, 1) 0%, #ffffff 33%, rgba(239, 245, 241, 0.31) 66%)",
+          }}
+        >
+          <div className="container pt-4" id="banner">
             <div
-              data-aos="fade-up"
-              className="d-flex justify-content-center align-items-center"
+              className="row justify-content-center align-items-center gap-4 gap-md-0 h-fit-content"
+              style={{ height: "450px" }}
             >
-              <a href={data?.banner.cta.link}>
-                <button className="primary-btn px-5 py-3 border-n">
-                  {data?.banner.cta.text}
-                </button>
-              </a>
+              <h1
+                data-aos="fade-in"
+                className="text-center w-md-75 w-100 fw-500 fs-sm-1 mt-4"
+                style={{ fontSize: "60px" }}
+              >
+                {(() => {
+                  const words = data?.banner.heading.split(" ");
+                  const lastFive = words.slice(-5).join(" ");
+                  const rest = words.slice(0, -5).join(" ");
+                  return (
+                    <>
+                      {rest} <span className="primary-c">{lastFive}</span>
+                    </>
+                  );
+                })()}
+              </h1>
+
+              <h5
+                data-aos="fade-in"
+                className="text-center w-md-75 fw-normal w-100 fs-5 sec-c mb-3 lh-base"
+              >
+                {data?.banner.subheading}
+              </h5>
+              <div
+                data-aos="fade-up"
+                className="d-flex justify-content-center align-items-center"
+              >
+                <a href={data?.banner.cta.link}>
+                  <button className="primary-btn px-5 py-3 border-n">
+                    {data?.banner.cta.text}
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
