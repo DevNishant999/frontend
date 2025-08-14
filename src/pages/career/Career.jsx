@@ -15,7 +15,7 @@ const Career = () => {
   }, []);
 
   return (
-    <div className="sec-pad pt-4 sec-bg">
+    <div className="sec-pad pt-md-4 pt-0 sec-bg">
       <div className="container">
         {/* Show Grid if no job selected */}
         {!selectedJob && (
@@ -44,20 +44,20 @@ const Career = () => {
         {/* Show Job Details if a job is selected */}
         {selectedJob && (
           <>
-            <div className="d-flex justify-content-between align-items-center mb-4">
-              <h2>{selectedJob.title}</h2>
+            <div className="d-flex flex-column-reverse gap-4 gap-md-0 align-items-start flex-md-row justify-content-between align-items-md-center mb-md-4">
+              <h2 className="p-head">{selectedJob.title}</h2>
               <button
-                className="btn primary-btn px-4"
+                className="btn primary-btn px-4 "
                 onClick={() => setSelectedJob(null)}
               >
-                ← Back to Openings
+                ← Back 
               </button>
             </div>
 
             <div className="row">
               {/* Job description */}
               <div
-                className="col-md-8"
+                className="col-md-8 mb-4 mb-md-0"
                 dangerouslySetInnerHTML={{ __html: selectedJob.description }}
               ></div>
 
