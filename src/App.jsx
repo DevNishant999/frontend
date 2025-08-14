@@ -27,9 +27,9 @@ const MedicalTourism = lazy(() =>
 );
 const Country = lazy(() => import("./pages/country/Country.jsx"));
 const City = lazy(() => import("./pages/city/City.jsx"));
+const Career = lazy(() => import("./pages/career/Career.jsx"));
 
 const App = () => {
-
   return (
     <Router>
       <Header />
@@ -53,6 +53,7 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/medical-tourism" element={<MedicalTourism />} />
+          <Route path="/career" element={<Career />} />
           <Route path="*" element={<FourOFour />} />
         </Routes>
       </Suspense>
